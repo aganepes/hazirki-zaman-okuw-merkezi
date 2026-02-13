@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>"Häzirki zaman" okuw merkezi</title>
+	<link rel="stylesheet" href="./static/style.css">
+	<link rel="shortcut icon" href="./static/public/icon.png" type="image/png">
+</head>
+
+<body>
+	<canvas id="dotsCanvas"></canvas>
+	<nav role="navigation" aria-label="Esasy nawigasiýa">
+		<div class="container">
+			<ul>
+				<li><a href="#hero">Baş sahypa</a></li>
+				<li><a href="#courses">Kurslar</a></li>
+				<li><a href="#address">Salgymyz</a></li>
+				<li><a href="#contact">Habarlaş</a></li>
+			</ul>
+			<button class="dark-toggle" id="darkToggle" aria-label="Gara reňkli modele geçiş">🌙 Gara režim</button>
+		</div>
+	</nav>
+	<main>
+		<section id="hero" class="hero" role="banner">
+			<div class="logo-container" id="logoContainer">
+				<img src="./static/public/logo.png" alt='"Häzirki zaman" okuw merkeziniň logosy' class="logo">
+			</div>
+			<h1>"Häzirki zaman" okuw merkezi</h1>
+			<p>Biziň bilen wizualizasiýa we programmirleme professional derejä çenli öwreniň</p>
+			<div class="cta-buttons">
+				<a href="#" class="btn btn-primary">Kurslary gör</a>
+				<a href="#" class="btn btn-secondary">Habarlaş</a>
+			</div>
+			<div class="contact-buttons">
+				<a href="tel:+99364091255" class="btn btn-call">📞 Jaň et</a>
+				<a href="https://www.tiktok.com/@hazirki.zaman" target="_blank" class="btn btn-tiktok"
+					rol="noopener noreferrer">Tiktok</a>
+				<a href="https://www.instegram.com/hazirki_zaman.okuw_merkezi" target="_blank" rol="noopener noreferrer"
+					class="btn btn-instagram">Instegram</a>
+			</div>
+		</section>
+		<section id="courses" aria-labelledby="courses-heading">
+			<div class="container">
+				<h2 id="courses-heading">Kurslar</h2>
+				<div class="filter-buttons" role="group" aria-label="Kurs filterleri">
+					<button class="filter-btn" data-filter="all">Hemmesi</button>
+					<button class="filter-btn" data-filter="programmirleme">Programmirleme</button>
+					<button class="filter-btn" data-filter="wizualizasiýa">Wizualizasiýa</button>
+				</div>
+				<div class="courses-grid">
+					<article class="course-card" data-category="wizualizasiýa">
+						<h3>Wizualizasiýa</h3>
+						<p>3D modellemek, animasiýa we grafiki dizaýn öwreniň. Maya, Blender we Photoshop bilen işläň.
+						</p>
+						<span class="course-tag">Wizualizasiýa</span>
+					</article>
+					<article class="course-card" data-category="programmirleme">
+						<h3>Web programmirleme</h3>
+						<p>HTML, CSS, Javascript we häzirki zaman web tehnologiýalaryny öwreniň. Responsive web
+							sahypalar dörediň.</p>
+						<span class="course-tag">Programmirleme</span>
+					</article>
+					<article class="course-card" data-category="programmirleme">
+						<h3>Mobil programmirleme</h3>
+						<p>Android we IOS üçin programma dörediň. Flutter we React Native öwreniň.</p>
+						<span class="course-tag">Programmirleme</span>
+					</article>
+					<article class="course-card" data-category="programmirleme">
+						<h3>Java başlangyç</h3>
+						<p>Programmirleme dünýäsine giriň. Java diliniň esaslaryny we obýekt-ugurly programmirlemäni
+							öwreniň.</p>
+						<span class="course-tag">Programmirleme</span>
+					</article>
+					<article class="course-card" data-category="programmirleme">
+						<h3>Data Science giriş</h3>
+						<p>Maglumatlary seljermek, Python, pandas we machine learning esaslaryny öwreniň.</p>
+						<span class="course-tag">Programmirleme</span>
+					</article>
+					<article class="course-card" data-category="wizualizasiýa">
+						<h3>Grafiki dizaýn</h3>
+						<p>Adobe paketini ulanmak, logo dizaýny, branding we digital illýustrasiýa öwreniň.</p>
+						<span class="course-tag">Wizualizasiýa</span>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section id="address" aria-labelledby="address-heading">
+			<div class="container">
+				<h2 id="address-heading">Salgymyz</h2>
+				<div class="address-content">
+					<div class="address-text">
+						<p><strong>Biziň salgymyz</strong></p>
+						<p>Görogly (Perwyý maý) köçesi, Türkmenistan bankyň gapdalynda.</p>
+						<p><strong>Habarlaşmak üçin</strong></p>
+						<p>+99364091225</p>
+					</div>
+					<div class="map-placeholder">
+						<iframe onErro onerror="handleMapError()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1870.924306105624!2d58.37743805206774!3d37.94194428070788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6ffe06aa235913%3A0x9c2d408462ee3a4!2sW9RH%2BP3R%2C%20Ashgabat%2C%20Turkmenistan!5e0!3m2!1sen!2s!4v1769085457257!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" aria-label="contact-heading">
+			<div class="container">
+				<h2 id="contact-heading">Habarlaş</h2>
+				<form  class="contact-form" id="contactForm" aria-label="Habarlaşmak formasy">
+					<div class="form-group">
+						<label for="name">Adyňyz *</label>
+						<input type="text" id="name" name="name" required aria-required="true">
+					</div>
+					<div class="form-group">
+						<label for="phone">Telefon *</label>
+						<input type="tel" id="phone" name="phone" required aria-required="true">
+					</div>
+					<div class="form-group">
+						<label for="message">Haty / Beýan *</label>
+						<textarea name="message" id="message" required aria-required="true"></textarea>
+					</div>
+					<button class="btn btn-primary" type="submit" style="width: 100%; display: flex; gap:1rem;justify-content: center;">
+						<div class="message-spinner"></div>
+						Ugrat
+					</button>
+					<div class="success-message" id="successMessage" role="alert">
+						✅ Siziň hatyňyz üstünlikli ugradyldy ! Biz ýakyn wagtda siziň bilen habarlaşarys.
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer role="contentinfo">
+		<div class="container">
+			<p><strong>"Häzirki zaman" okuw merkezi</strong></p>
+			<p>Görogly (Prewyý maý) köçesi, Türkmenistan bankyň gapdalynda</p>
+			<p id="phone-number">Habarlaşmak üçin : +99364091255</p>
+			<p style="margin-top:1rem; opacity: .6;">® 2026 "Häzirki zaman" okuw merkezi. Ähli hukuklar goralan.</p>
+		</div>
+	</footer>
+	<script src="./static/script.js"></script>
+</body>
+
+</html>

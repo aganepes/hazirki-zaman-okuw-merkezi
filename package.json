@@ -1,0 +1,13 @@
+{
+  "name": "hazirki-zaman-okuw-merkezi-backend",
+  "scripts": {
+    "dev": "bun run --hot server.ts"
+  },
+  "dependencies": {
+    "hono": "^4.11.9",
+    "nodemailer": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
